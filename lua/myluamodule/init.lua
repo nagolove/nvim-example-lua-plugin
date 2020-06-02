@@ -16,7 +16,7 @@ function global_lua_function()
     print "nvim-example-lua-plugin.myluamodule.init global_lua_function: hello"
 end
 
-function llPrintG()
+function ll_print_G()
     print(inspect(_G))
 end
 
@@ -38,4 +38,5 @@ end
 --    myluamodule.local_lua_function()
 return {
     local_lua_function = local_lua_function,
+    ll_print_G = ll_print_G,
 }
