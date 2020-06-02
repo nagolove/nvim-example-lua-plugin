@@ -12,6 +12,9 @@ end
 --    ds.show_stuff()
 --    local definestuff = require('myluamodule/definestuff')
 --    definestuff.show_stuff()
+
+require "example"
+
 return {
     show_stuff = show_stuff,
 }
