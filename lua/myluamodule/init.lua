@@ -9,8 +9,15 @@
 -- a function called `connect` in my module, I would be more concerned. So I
 -- normally try to follow the pattern demonstrated by `local_lua_function`. The
 -- right choice might depend on your circumstances.
+
+local inspect = require "inspect"
+
 function global_lua_function()
     print "nvim-example-lua-plugin.myluamodule.init global_lua_function: hello"
+end
+
+function llPrintG()
+    print(inspect(_G))
 end
 
 -- This function is qualified with `local`, so it's visibility is restricted to
